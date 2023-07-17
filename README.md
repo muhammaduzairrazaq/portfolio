@@ -21,7 +21,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-In this project I have created a mobile first portfolio covering work section and about me section.
+In this project I have created my portfolio.
 
 ## 🛠 Built With <a name="built-with"></a>
 
