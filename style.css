@@ -13,7 +13,7 @@ nav {
   justify-content: flex-end;
   width: 92%;
   margin-top: 10%;
-  align-items: center;  
+  align-items: center;
 }
 
 .heading {
@@ -39,9 +39,8 @@ nav {
   font-family: sans-serif;
   font-size: 120%;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
-
 
 aside {
   margin-top: 5%;
@@ -53,18 +52,17 @@ aside ul {
   justify-content: space-between;
 }
 
-
 .work-inside p {
   margin-top: 3%;
   font-size: 130%;
   overflow: hidden;
   font-weight: bold;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .about-me p {
   margin-top: 5%;
-  color: #42526E;
+  color: #42526e;
   text-align: center;
   font-family: sans-serif;
   font-weight: lighter;
@@ -102,10 +100,6 @@ aside ul {
   height: 50%;
 }
 
-ul {
-  list-style: none;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -123,7 +117,7 @@ main {
 }
 
 .main-heading {
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
   font-family: Inter, sans-serif;
   font-size: 220%;
@@ -142,11 +136,10 @@ main {
 }
 
 .recent-works-container {
-  display: flex;
-  justify-content: center;
   margin-top: 15%;
   width: 88%;
   display: grid;
+  justify-content: center;
   grid-template-columns: 0.9fr;
   grid-template-rows: repeat(30, 8.2vh);
   gap: 2rem;
@@ -176,7 +169,7 @@ main {
 
 [class~="tag"] {
   margin-top: 5%;
-  color: #3A4A42;
+  color: #3a4a42;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 72%;
   font-style: normal;
@@ -189,10 +182,10 @@ main {
 
 .button {
   padding: 3.8%;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 1vw;
   border: 0 solid;
-  color: #FFFFFF;
+  color: #fff;
   text-align: center;
   font-family: sans-serif;
   font-size: 100%;
@@ -208,7 +201,7 @@ main {
 
 [class~="work"] {
   background-color: #ebf0ee;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 8px;
   display: flex;
   align-items: flex-end;
@@ -246,7 +239,7 @@ main {
 }
 
 .about-me h1 {
-  color: #172B4D;
+  color: #172b4d;
   margin-top: -4%;
   text-align: center;
   font-family: Inter, sans-serif;
@@ -255,10 +248,10 @@ main {
 
 .button2 {
   padding: 4%;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 1vw;
   border: 0 solid;
-  color: #FFFFFF;
+  color: #fff;
   text-align: center;
   font-family: sans-serif;
   font-size: 115%;
@@ -285,11 +278,10 @@ main {
 }
 
 .skills-container {
-  display: flex;
-  justify-content: center;
   margin-top: 10%;
   width: 80%;
   display: grid;
+  justify-content: center;
   grid-template-columns: 0.9fr;
   grid-template-rows: repeat(10, 11vh);
   gap: 2rem;
@@ -361,9 +353,9 @@ main {
 
 [class~="skill"] {
   background-color: #ebf0ee;
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
