@@ -28,16 +28,14 @@ nav {
   color: #172b4d;
   text-align: center;
   font-family: Inter, sans-serif;
-  font-size: 230%;
+  font-size: 2.5rem;
   margin-top: 19%;
   font-style: normal;
-  line-height: 120%;
   margin-bottom: 4%;
 }
 
 .heading p {
   font-family: sans-serif;
-  font-size: 120%;
   text-align: center;
   color: #172b4d;
 }
@@ -54,7 +52,7 @@ aside ul {
 
 .work-inside p {
   margin-top: 3%;
-  font-size: 130%;
+  font-size: 1.3rem;
   overflow: hidden;
   font-weight: bold;
   color: #3a4a42;
@@ -66,7 +64,7 @@ aside ul {
   text-align: center;
   font-family: sans-serif;
   font-weight: lighter;
-  font-size: 118%;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 
@@ -76,10 +74,10 @@ aside ul {
 }
 
 .main-text {
-  font-size: 130%;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 1.8rem;
   width: 70%;
   font-family: Inter, sans-serif;
 }
@@ -120,7 +118,7 @@ main {
   color: #172b4d;
   text-align: center;
   font-family: Inter, sans-serif;
-  font-size: 220%;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 700;
   width: 70%;
@@ -243,7 +241,7 @@ main {
   margin-top: -4%;
   text-align: center;
   font-family: Inter, sans-serif;
-  font-size: 240%;
+  font-size: 2.4rem;
 }
 
 .button2 {
@@ -254,7 +252,7 @@ main {
   color: #fff;
   text-align: center;
   font-family: sans-serif;
-  font-size: 115%;
+  font-size: 1.2rem;
   font-style: normal;
   align-self: center;
   margin-top: 7%;
@@ -314,7 +312,7 @@ main {
   margin-bottom: 9%;
   text-align: center;
   font-family: Inter, sans-serif;
-  font-size: 150%;
+  font-size: 1.5rem;
   font-weight: 600;
   font-style: normal;
   overflow: hidden;
@@ -365,7 +363,7 @@ main {
   width: 78%;
   text-align: center;
   color: #172b4d;
-  font-size: 250%;
+  font-size: 2.4rem;
 }
 
 #contact-form {
