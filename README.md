@@ -55,7 +55,7 @@ In this project I have created my portfolio.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live demo comming soon...
+- Link to the portfolio: _https://muhammaduzairrazaq.github.io/Portfolio/_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +81,7 @@ Clone this repository to your desired folder:
 
 To run the project, follow these steps:
 
-- Run index.html file in a browser.
+- Run the index.html file in a browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,14 +116,14 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project support me by liking it and also follow me on linkedin and twitter.
+If you like this project support me by liking it and following me on Linkedin and Twitter.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Umair Hamaza for helping me in this project.
+I want to thank Umair Hamaza for helping me with this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
