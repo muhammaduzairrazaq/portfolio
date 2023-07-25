@@ -129,7 +129,7 @@ aside ul {
 }
 
 body {
-  background-image: url('/assests/header-illsutration-mobile2.png');
+  background-image: url('assests/header-illsutration-mobile2.png');
   background-repeat: no-repeat;
   background-position-y: 1.4%;
   background-size: 100% 9%;
@@ -490,7 +490,7 @@ footer a {
   }
 
   body {
-    background-image: url('/assests/bkdesktop.png');
+    background-image: url('assests/bkdesktop.png');
     background-position-y: 0;
     background-size: 100% 12%;
   }
