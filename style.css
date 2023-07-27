@@ -153,6 +153,10 @@ body {
   height: 50%;
 }
 
+label {
+  display: none;
+}
+
 .indicator {
   width: 18%;
   height: 0.6vh;
