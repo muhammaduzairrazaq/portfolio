@@ -37,16 +37,142 @@ nav {
   top: 14vw;
   left: -100pc;
   background-color: white;
-  height: 359pc;
+  height: 1000vh;
   width: 100vw;
-  transition: all 0.3s ease;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  transition: all 0.5s ease;
   gap: 2rem;
+}
+
+.project-details-bkg {
+  display: flex;
+  justify-content: center;
+  background: rgba(193, 199, 208, 0.9);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  padding-top: 2rem;
+  top: -100pc;
+  transition: all 0.5s ease;
+}
+
+.top-open {
+  top: 0;
+}
+
+.project-details {
+  display: grid;
+  gap: 2rem;
+  width: 90%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto);
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  height: max-content;
+}
+
+.projbk {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  background-image: url(assests/detailsmobile.jpg);
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.details-btn {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.next-prev-button {
+  border-radius: 5px;
+  display: none;
+  justify-content: space-between;
+}
+
+.next-prev-button button {
+  background: #1e488f;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+}
+
+.details-desk-btn button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.next-prev-button button:active {
+  background: #0a2759;
+}
+
+.details-btn i {
+  color: white;
+  font-size: x-large;
+  padding-right: 0;
+}
+
+.next-prev-button button i {
+  padding-right: 0;
+}
+
+.pro-detail-heading {
+  color: #172b4d;
+  font-size: large;
+  max-width: 570px;
+}
+
+.tag-desk {
+  display: none;
+}
+
+.details-desk-btn {
+  display: none;
+  justify-content: end;
+  padding-bottom: 1rem;
+}
+
+.details-desk-btn button i {
+  padding: 0;
+}
+
+.pro-detail-text {
+  font-size: 1rem;
+  font-style: normal;
+  color: #344563;
+  text-align: justify;
+  line-height: 1.8rem;
+  font-family: Inter, sans-serif;
+}
+
+.pro-detail-button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  max-width: 330px;
 }
 
 .open {
   left: 0%;
+}
+
+.icon-button {
+  margin-left: 1rem;
 }
 
 .menu-btnn {
@@ -54,7 +180,11 @@ nav {
 }
 
 .fa-xmark {
-  padding-right: 2rem;
+  color: #93a79d;
+  padding-right: 2.5rem;
+}
+
+.fa-xxmark {
   position: fixed;
   z-index: 1;
 }
@@ -68,7 +198,7 @@ nav {
 }
 
 .fa-solid {
-  padding-right: 2rem;
+  padding-right: 2.5rem;
   font-size: large;
 }
 
@@ -265,6 +395,11 @@ body {
   overflow: hidden;
 }
 
+.project-detail-tags {
+  justify-content: flex-start;
+  max-width: 250px;
+}
+
 [class~="tag"] {
   margin-top: 5%;
   color: #3a4a42;
@@ -293,8 +428,17 @@ body {
   overflow: hidden;
 }
 
+.icon-buttonn {
+  margin-top: 1rem;
+  background: #1e488f;
+}
+
 .button:active {
   background-color: #008552;
+}
+
+.icon-buttonn:active {
+  background: #0a2759;
 }
 
 [class~="work"] {
@@ -451,10 +595,6 @@ body {
   padding-top: 0;
 }
 
-/* .form-list li {
-  padding-top: 20px;
-} */
-
 .form-list li:nth-child(1) {
   padding-top: 0;
 }
@@ -514,11 +654,6 @@ footer a {
   background-color: #0d151e;
 }
 
-/*
-ul li {
-  text-decoration: none;
-} */
-
 .nav-bar a {
   text-decoration: none;
   font-family: Inter, sans-serif;
@@ -561,8 +696,52 @@ ul li {
 }
 
 @media screen and (min-width: 768px) {
+  .project-details {
+    grid-template-rows: repeat(6, auto);
+    position: absolute;
+  }
+
+  .next-prev-button {
+    display: flex;
+  }
+
+  .next-prev-button button i {
+    display: contents;
+  }
+
   .menu-btn {
     display: none;
+  }
+
+  .project-detail-tags {
+    max-width: 450px;
+  }
+
+  .tag-desk {
+    display: flex;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .tag-mobile {
+    display: none;
+  }
+
+  .details-btn {
+    display: none;
+  }
+
+  .details-desk-btn {
+    display: flex;
+  }
+
+  .projbk {
+    background-image: url(assests/detailsdesk.jpg);
+    background-size: cover;
+    height: 60vh;
+    margin-top: -40px;
   }
 
   nav {
@@ -589,6 +768,10 @@ ul li {
 
   .bk-img {
     background-image: none;
+  }
+
+  .fadisplay {
+    display: contents;
   }
 
   body {
@@ -688,6 +871,24 @@ ul li {
   .image-aboutme2,
   .image-container-bottom {
     margin-top: -13pc;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-details {
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .pro-detail-button {
+    position: absolute;
+    grid-row-start: 3;
+    right: 12px;
+    top: -1pc;
+  }
+
+  .next-prev-button {
+    gap: 1rem;
+    padding: 0 30%;
   }
 }
 

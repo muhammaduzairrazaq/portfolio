@@ -7,17 +7,18 @@
     <title>Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
     <script src="https://kit.fontawesome.com/b2e81c5d42.js" crossorigin="anonymous"></script>
+    <!-- <script src="test-script.js" ></script> -->
     <link rel="StyleSheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <button class="menu-btn" onclick="showMenu()">
+            <button class="menu-btn" onclick="showMenu()" type="menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <button class="menu-btn menu-btnn" onclick="closeMenu()">
-                <i class="fa-solid fa-xmark"></i>
+            <button class="menu-btn menu-btnn" onclick="closeMenu()" type="menu">
+                <i class="fa-solid fa-xmark fa-xxmark"></i>
             </button>
             <ul class="nav-bar">
                 <a href="#Portfolio" onclick="highLight('.high1')" class="margint-top">
@@ -36,12 +37,49 @@
         </nav>
     </header>
     <main>
+        <div class="project-details-bkg">
+            <div class="project-details">
+                <div class="details-desk-btn">
+                    <button class="padding-bottom" onclick="projectDetailWindow('close')">
+                        <i class="fa-solid fa-xmark fadisplay"></i>
+                    </button>
+                </div>
+                <div class="projbk" id="projbk">
+                    <button class="details-btn" type="button" onclick="projectDetailWindow('close')">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="pro-detail-heading">
+                    <h1 id="name"></h1>
+                </div>
+                <div class="project-details-tags">
+                    <ul class="work-inside-tags project-detail-tags">
+                    </ul>
+                </div>
+                <div class="pro-detail-text">
+                    <p id="description">
+                    </p>
+                </div>
+                <div class="pro-detail-button">
+                      
+                </div>
+                <!-- <div class="next-prev-button">
+                    <button class="prev-button">
+                        <i class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+                    </button>
+                    <button class="next-button">
+                        <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+                    </button>
+                </div> -->
+            </div>
+        </div>
         <section class="heading" id="Portfolio">
             <h1>Hey there. I’m Uzair. <br>
                 <p>I’m a software developer</p>
             </h1>
             <p class="main-text">
-                I can help you build a product , feature or website Look through some of my work and experience! If you
+                I can help you build a product , feature or website Look through some of my work and experience! If
+                you
                 like what you see and have a project you need coded,
                 don’t hesitate to contact me.
             </p>
@@ -84,7 +122,8 @@
                             <li class="tag3 tag">JavaScript</li>
                             <li class="tag4 tag">HTML</li>
                         </ul>
-                        <button type="button" class="button">See project</button>
+                        <button type="button" class="button" onclick="projectDetailWindow('project1')">See
+                            project</button>
                     </div>
                 </div>
                 <div class="work2 work">
@@ -98,7 +137,8 @@
                             <li class="tag3 tag">JavaScript</li>
                             <li class="tag4 tag">HTML</li>
                         </ul>
-                        <button type="button" class="button">See project</button>
+                        <button type="button" class="button" onclick="projectDetailWindow('project2')">See
+                            project</button>
                     </div>
                 </div>
                 <div class="work3 work">
@@ -112,7 +152,8 @@
                             <li class="tag3 tag">JavaScript</li>
                             <li class="tag4 tag">HTML</li>
                         </ul>
-                        <button type="button" class="button">See project</button>
+                        <button type="button" class="button" onclick="projectDetailWindow('project3')">See
+                            project</button>
                     </div>
                 </div>
                 <div class="work4 work">
@@ -126,7 +167,8 @@
                             <li class="tag3 tag">JavaScript</li>
                             <li class="tag4 tag">HTML</li>
                         </ul>
-                        <button type="button" class="button">See project</button>
+                        <button type="button" class="button" onclick="projectDetailWindow('project4')">See
+                            project</button>
                     </div>
                 </div>
                 <div class="work5 work">
@@ -140,7 +182,8 @@
                             <li class="tag3 tag">JavaScript</li>
                             <li class="tag4 tag">HTML</li>
                         </ul>
-                        <button type="button" class="button">See project</button>
+                        <button type="button" class="button" onclick="projectDetailWindow('project5')">See
+                            project</button>
                     </div>
                 </div>
                 <div class="work6 work">
@@ -154,7 +197,8 @@
                             <li class="tag3 tag">JavaScript</li>
                             <li class="tag4 tag">HTML</li>
                         </ul>
-                        <button type="button" class="button" type="button">See project</button>
+                        <button type="button" class="button" type="button" onclick="projectDetailWindow('project6')">See
+                            project</button>
                     </div>
                 </div>
             </section>
@@ -169,7 +213,8 @@
                     About me
                 </h1>
                 <p>
-                    I can help you build a product , feature or website Look through some of my work and experience! If
+                    I can help you build a product , feature or website Look through some of my work and experience!
+                    If
                     you like what you see and have a project you need coded,
                     don’t hesitate to contact me.
                 </p>
@@ -217,14 +262,14 @@
                     </div>
                     <p class="skill-name">
                         Skills
-                        <p>
-                            <ul class="skill-inside-tags">
-                                <li class="tags">Database Management</li>
-                                <li class="tags">Version Control</li>
-                                <li class="tags">CLI</li>
-                                <li class="tags">Web Development</li>
-                                <li class="tags">API Design</li>
-                            </ul>
+                    <p>
+                    <ul class="skill-inside-tags">
+                        <li class="tags">Database Management</li>
+                        <li class="tags">Version Control</li>
+                        <li class="tags">CLI</li>
+                        <li class="tags">Web Development</li>
+                        <li class="tags">API Design</li>
+                    </ul>
                 </div>
             </section>
         </div>
@@ -240,14 +285,14 @@
                     <ul class="form-list">
                         <li>
                             <input name="name" type="text" placeholder="Full name" pattern="[A-Za-z\s]+" required
-                            maxlength="30">
+                                maxlength="30">
                         </li>
                         <li>
                             <input name="email" type="email" placeholder="Email address" required>
                         </li>
                         <li>
                             <textarea rows="5" cols="60" name="message" placeholder="Hey I would like to connect to.."
-                            required maxlength="500"></textarea>
+                                required maxlength="500"></textarea>
                         </li>
                         <li class="button-form">
                             <button type='submit' class="button form-button">Get in touch</button>
@@ -284,7 +329,6 @@
         <div class="indicator indicator-footer">
         </div>
     </footer>
-
     <script src="java_script.js"></script>
 </body>
 
