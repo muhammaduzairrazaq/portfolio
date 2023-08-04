@@ -199,7 +199,7 @@ nav {
 
 .fa-solid {
   padding-right: 2.5rem;
-  font-size: large;
+  font-size: 3vh;
 }
 
 .hide {
@@ -701,6 +701,17 @@ footer a {
     position: absolute;
   }
 
+  .heading h1 {
+    font-size: 3vw;
+    margin-top: 3%;
+  }
+
+  .main-text {
+    line-height: 3vw;
+    max-width: 80%;
+    font-size: 2vw;
+  }
+
   .next-prev-button {
     display: flex;
   }
@@ -759,7 +770,7 @@ footer a {
   }
 
   .nav-bar a li {
-    font-size: 0.7rem;
+    font-size: 1vw;
   }
 
   .fa-solid {
@@ -782,15 +793,6 @@ footer a {
 
   nav img {
     display: none;
-  }
-
-  .heading h1 {
-    margin-top: 3%;
-    font-size: 2rem;
-  }
-
-  .main-text {
-    font-size: 1rem;
   }
 
   .indicator {
