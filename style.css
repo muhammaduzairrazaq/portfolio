@@ -8,12 +8,218 @@
   font-family: Inter, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.underline {
+  width: 32px;
+  margin-top: 0.5em;
+  height: 1px;
+  border-radius: 5px;
+  background-color: rgb(49, 47, 47);
+}
+
 nav {
   display: flex;
-  justify-content: flex-end;
-  width: 92%;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
   margin-top: 10%;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  top: 14vw;
+  left: -100pc;
+  background-color: white;
+  height: 1000vh;
+  width: 100vw;
+  transition: all 0.5s ease;
+  gap: 2rem;
+}
+
+.project-details-bkg {
+  display: flex;
+  justify-content: center;
+  background: rgba(193, 199, 208, 0.9);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  padding-top: 2rem;
+  top: -100pc;
+  transition: all 0.5s ease;
+}
+
+.top-open {
+  top: 0;
+}
+
+.project-details {
+  display: grid;
+  gap: 2rem;
+  width: 90%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto);
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  height: max-content;
+}
+
+.projbk {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  background-image: url(assests/detailsmobile.jpg);
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.details-btn {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.next-prev-button {
+  border-radius: 5px;
+  display: none;
+  justify-content: space-between;
+}
+
+.next-prev-button button {
+  background: #1e488f;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+}
+
+.details-desk-btn button {
+  border: none;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 0.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.next-prev-button button:active {
+  background: #0a2759;
+}
+
+.details-btn i {
+  color: white;
+  font-size: x-large;
+  padding-right: 0;
+}
+
+.next-prev-button button i {
+  padding-right: 0;
+}
+
+.pro-detail-heading {
+  color: #172b4d;
+  font-size: large;
+  max-width: 570px;
+}
+
+.tag-desk {
+  display: none;
+}
+
+.details-desk-btn {
+  display: none;
+  justify-content: end;
+  padding-bottom: 1rem;
+}
+
+.details-desk-btn button i {
+  padding: 0;
+}
+
+.pro-detail-text {
+  font-size: 1rem;
+  font-style: normal;
+  color: #344563;
+  text-align: justify;
+  line-height: 1.8rem;
+  font-family: Inter, sans-serif;
+}
+
+.pro-detail-button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  max-width: 330px;
+}
+
+.open {
+  left: 0%;
+}
+
+.icon-button {
+  margin-left: 1rem;
+}
+
+.menu-btnn {
+  display: none;
+}
+
+.fa-xmark {
+  color: #93a79d;
+  padding-right: 2.5rem;
+}
+
+.fa-xxmark {
+  position: fixed;
+  z-index: 1;
+}
+
+.menu-btn {
+  margin-bottom: 5vh;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.fa-solid {
+  padding-right: 2.5rem;
+  font-size: 3vh;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: contents;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+.form-list li {
+  padding-top: 20px;
+}
+
+.nav-bar a li {
+  font-size: 1.7rem;
 }
 
 .heading {
@@ -193,6 +399,11 @@ label {
   overflow: hidden;
 }
 
+.project-detail-tags {
+  justify-content: flex-start;
+  max-width: 250px;
+}
+
 [class~="tag"] {
   margin-top: 5%;
   color: #3a4a42;
@@ -221,8 +432,17 @@ label {
   overflow: hidden;
 }
 
+.icon-buttonn {
+  margin-top: 1rem;
+  background: #1e488f;
+}
+
 .button:active {
   background-color: #008552;
+}
+
+.icon-buttonn:active {
+  background: #0a2759;
 }
 
 [class~="work"] {
@@ -379,10 +599,6 @@ label {
   padding-top: 0;
 }
 
-.form-list li {
-  padding-top: 20px;
-}
-
 .form-list li:nth-child(1) {
   padding-top: 0;
 }
@@ -451,11 +667,6 @@ footer a {
   color: #344563;
 }
 
-.nav-bar {
-  display: none;
-  gap: 2rem;
-}
-
 .image-aboutme-desktop {
   display: none;
 }
@@ -489,8 +700,93 @@ footer a {
 }
 
 @media screen and (min-width: 768px) {
+  .project-details {
+    grid-template-rows: repeat(6, auto);
+    position: absolute;
+  }
+
+  .heading h1 {
+    font-size: 3vw;
+    margin-top: 3%;
+  }
+
+  .main-text {
+    line-height: 3vw;
+    max-width: 80%;
+    font-size: 2vw;
+  }
+
+  .next-prev-button {
+    display: flex;
+  }
+
+  .next-prev-button button i {
+    display: contents;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .project-detail-tags {
+    max-width: 450px;
+  }
+
+  .tag-desk {
+    display: flex;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .tag-mobile {
+    display: none;
+  }
+
+  .details-btn {
+    display: none;
+  }
+
+  .details-desk-btn {
+    display: flex;
+  }
+
+  .projbk {
+    background-image: url(assests/detailsdesk.jpg);
+    background-size: cover;
+    height: 60vh;
+    margin-top: -40px;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    transition: none;
+  }
+
+  .nav-bar a li {
+    font-size: 1vw;
+  }
+
+  .fa-solid {
+    display: none;
+  }
+
   .bk-img {
     background-image: none;
+  }
+
+  .fadisplay {
+    display: contents;
   }
 
   body {
@@ -501,29 +797,6 @@ footer a {
 
   nav img {
     display: none;
-  }
-
-  nav {
-    margin-top: 2%;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .heading h1 {
-    margin-top: 3%;
-    font-size: 2rem;
-  }
-
-  .main-text {
-    font-size: 1rem;
-  }
-
-  .nav-bar {
-    display: flex;
-  }
-
-  .heading {
-    margin-top: 10%;
   }
 
   .indicator {
@@ -607,6 +880,24 @@ footer a {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .project-details {
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .pro-detail-button {
+    position: absolute;
+    grid-row-start: 3;
+    right: 12px;
+    top: -1pc;
+  }
+
+  .next-prev-button {
+    gap: 1rem;
+    padding: 0 30%;
+  }
+}
+
 @media screen and (min-width: 1150px) {
   .recent-works-container {
     grid-template-columns: repeat(3, 1fr);
@@ -621,7 +912,6 @@ footer a {
   }
 
   .form-list {
-    max-width: fit-content;
     max-width: none;
     padding: 1px;
   }
