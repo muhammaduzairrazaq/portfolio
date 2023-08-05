@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 class Object {
   constructor(name, description, image, technologies, technologiesDesk, linkLive, linkSource) {
     this.projectDetails = {
@@ -49,7 +50,8 @@ class Object {
   }
 
   returnLinks() {
-    const dynamicbutton = `<a href='${this.projectDetails.linkLive}'>  <button type="button" class="button icon-buttonn">
+    const dynamicbutton = `<a href='${this.projectDetails.linkLive}'>  <
+    button type="button" class="button icon-buttonn">
     See live
     <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
         viewBox="0 0 24 24" fill="none">
