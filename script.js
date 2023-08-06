@@ -243,3 +243,16 @@ function projectDetailWindowOpenClose(status) {
   }
   projectDetailWindow(status);
 }
+
+const button = document.querySelector('.form-button');
+button.addEventListener('click', (event) => {
+  const email = document.getElementById('email-address');
+  const emailAddress = email.value;
+  const lowerCase = emailAddress.toLowerCase();
+  if (emailAddress !== lowerCase) {
+    document.querySelector('.error').classList.add('display-flex');
+    event.preventDefault();
+  } else {
+    document.querySelector('.error').classList.remove('display-flex');
+  }
+});

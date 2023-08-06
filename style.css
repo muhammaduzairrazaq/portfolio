@@ -152,12 +152,13 @@ nav {
 }
 
 .pro-detail-text {
+  font-family: Inter, sans-serif;
   font-size: 1rem;
   font-style: normal;
+  font-weight: 400;
   color: #344563;
   text-align: justify;
   line-height: 1.8rem;
-  font-family: Inter, sans-serif;
 }
 
 .pro-detail-button {
@@ -274,8 +275,7 @@ aside ul {
   overflow: hidden;
   font-weight: bold;
   color: #3a4a42;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 2%;
 }
 
 .aboutme-parent {
@@ -291,6 +291,12 @@ aside ul {
   font-weight: lighter;
   font-size: 1.4rem;
   line-height: 1.5;
+}
+
+.error p {
+  font-family: Inter, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
 }
 
 .heading h1 p {
@@ -390,6 +396,7 @@ label {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 2%;
 }
 
 .work-inside-tags {
@@ -434,15 +441,10 @@ label {
 
 .icon-buttonn {
   margin-top: 1rem;
-  background: #1e488f;
 }
 
 .button:active {
   background-color: #008552;
-}
-
-.icon-buttonn:active {
-  background: #0a2759;
 }
 
 [class~="work"] {
@@ -482,6 +484,8 @@ label {
 
 .img-desk {
   display: none;
+  position: static;
+  z-index: -1;
 }
 
 .skills-container {
@@ -632,7 +636,23 @@ textarea {
 
 .button-form {
   display: flex;
-  justify-content: center;
+  gap: 0.2rem;
+}
+
+.error {
+  border: 1px solid red;
+  background-color: #f8d7da;
+  color: #470200;
+  border-radius: 4px;
+  width: 60%;
+  display: none;
+  gap: 0.2rem;
+  padding: 1px;
+  align-items: center;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .last-child {
@@ -648,6 +668,9 @@ footer {
 }
 
 footer a {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   color: #42526e;
   text-decoration: none;
 }
@@ -696,6 +719,18 @@ footer a {
   body {
     background-size: 100% 10%;
     background-position-y: 2%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .button-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .error {
+    padding: 15px 1px;
   }
 }
 
@@ -899,6 +934,10 @@ footer a {
 }
 
 @media screen and (min-width: 1150px) {
+  body {
+    background-size: 100% 19%;
+  }
+
   .recent-works-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 400px);
@@ -952,6 +991,14 @@ footer a {
   .image-aboutme2 {
     margin-top: -15pc;
   }
+
+  .error {
+    width: 100%;
+  }
+
+  .form-button {
+    min-width: 117px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -970,12 +1017,6 @@ footer a {
 @media screen and (min-width: 1050px) {
   body {
     background-size: 100% 17%;
-  }
-}
-
-@media screen and (min-width: 1150px) {
-  body {
-    background-size: 100% 19%;
   }
 }
 
