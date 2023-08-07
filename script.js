@@ -256,3 +256,27 @@ button.addEventListener('click', (event) => {
     document.querySelector('.error').classList.remove('display-flex');
   }
 });
+
+const userName = document.querySelector('#user-name');
+const emailAddress = document.querySelector('#email-address');
+const message = document.querySelector('#text-area');
+
+function dataStorage() {
+  const formData = {
+    name: userName.value,
+    email: emailAddress.value,
+    message: message.value,
+  };
+  localStorage.setItem('data', JSON.stringify(formData));
+}
+
+const elements = [userName, emailAddress, message];
+for (let i = 0; i < elements.length; i += 1) {
+  elements[i].addEventListener('focusout', dataStorage);
+}
+const userData = JSON.parse(localStorage.getItem('data'));
+if (userData) {
+  userName.value = userData.name;
+  emailAddress.value = userData.email;
+  message.value = userData.message;
+}
