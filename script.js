@@ -1,14 +1,14 @@
 /* eslint-disable max-len */
 class Object {
-  constructor(name, description, image, technologies, technologiesDesk, linkLive, linkSource) {
+  constructor(projName, projDescription, projImage, projTechnologies, projTechnologiesDesk, projLinkLive, projLinkSource) {
     this.projectDetails = {
-      name,
-      description,
-      image,
-      technologies,
-      technologiesDesk,
-      linkLive,
-      linkSource,
+      name: projName,
+      description: projDescription,
+      image: projImage,
+      technologies: projTechnologies,
+      technologiesDesk: projTechnologiesDesk,
+      linkLive: projLinkLive,
+      linkSource: projLinkSource,
     };
   }
 
