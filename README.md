@@ -21,7 +21,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-In this project I have created my portfolio.
+In this project, I have created my portfolio.
 
 ## 🛠 Built With <a name="built-with"></a>
 
