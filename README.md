@@ -88,7 +88,7 @@ To run the project, follow these steps:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Muhammad Uzair**
 
 - GitHub: [@githubhandle](https://github.com/muhammaduzairrazaq)
 - Twitter: [@twitterhandle](https://twitter.com/muhamma55160007?t=U6eNahc3mZKSPGDJZyqT2A&s=09)
