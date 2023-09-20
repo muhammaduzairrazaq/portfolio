@@ -55,7 +55,7 @@ In this project, I have created my portfolio.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Portfolio: [Launch](https://muhammaduzairrazaq.github.io/Portfolio/)
+- Portfolio: [Launch](https://muhammaduzairrazaq.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
