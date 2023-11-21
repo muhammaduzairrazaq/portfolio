@@ -79,18 +79,21 @@ class Object {
 }
 
 const project1 = new Object(
-  'Keeping track of hundreds of components',
-  `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-  when an unknown printer took a galley of type and scrambled it 1960s.
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-  when an unknown printer took a galley of type and scrambled it 1960s.`,
-  'assests/bottomframe.png',
-  ['JavaScript', 'Rubby on Rails', 'CSS'],
-  ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-  'https://example.com/live',
-  'https://github.com/example/project_x',
+  'Online AI Courses Website',
+  `In this project I have created an educational website which offers free
+  Artifical Intelligence courses. Although the site is currently in a wireframe phase,
+  its purpose is clear—to ignite curiosity and encourage discovery.
+  The Home page serves as a gateway, offering glimpses into various AI topics,
+  from fundamental concepts to advanced applications.
+  On the About page, you'll find insights into the mission and the dedicated
+  team behind this initiative, all working towards democratizing AI education.
+  While the website doesn't currently provide courses,
+  it sets the stage for future learning experiences.`,
+  'assests/project1.png',
+  ['JavaScript', 'HTML', 'CSS'],
+  ['Github', 'Javascript', 'Bootstrap', 'HTML', 'CSS'],
+  'https://muhammaduzairrazaq.github.io/capstoneProject/',
+  'https://github.com/muhammaduzairrazaq/capstoneProject',
 );
 
 const project2 = new Object(
@@ -175,6 +178,9 @@ function displayWorksection() {
   for (let i = 0; i < objectsArray.length; i += 1) {
     dynamicWorksection += `
     <div class="work">
+    <div>
+    <img class="projbk" src="${objectsArray[i].returnImage}" alt="A design image">
+    </div>
       <div class="work-inside">
         <p>
           ${objectsArray[i].returnName()}
@@ -227,7 +233,7 @@ function highLight(name) {
 
 // eslint-disable-next-line no-unused-vars
 function projectDetailWindow(projectName) {
-  // document.getElementById('projbk').style.backgroundImage=`url("${objectsArray[projectName].returnImage()}")`;
+  document.getElementById('projbk').style.backgroundImage=`url("${objectsArray[projectName].returnImage()}")`;
   document.querySelector('#name').innerHTML = objectsArray[projectName].returnName();
   document.querySelector('.project-detail-tags').innerHTML = objectsArray[projectName].returnList();
   document.querySelector('#description').innerHTML = objectsArray[projectName].returnDescription();

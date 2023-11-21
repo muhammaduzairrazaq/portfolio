@@ -80,7 +80,7 @@ nav {
   background-image: url(assests/detailsmobile.jpg);
   width: 100%;
   height: 35vh;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
