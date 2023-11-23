@@ -7,7 +7,7 @@ class Object {
     projTechnologies,
     projTechnologiesDesk,
     projLinkLive,
-    projLinkSource
+    projLinkSource,
   ) {
     this.projectDetails = {
       name: projName,
@@ -33,25 +33,25 @@ class Object {
   }
 
   returnList() {
-    let dynamicList = "";
+    let dynamicList = '';
     for (let i = 0; i < this.projectDetails.technologies.length; i += 1) {
       dynamicList += `<li class="tag tag-mobile">${this.projectDetails.technologies[i]}</li>`;
-      dynamicList += "\n";
+      dynamicList += '\n';
     }
 
     for (let i = 0; i < this.projectDetails.technologiesDesk.length; i += 1) {
       dynamicList += `<li class="tag tag-desk">${this.projectDetails.technologiesDesk[i]}</li>`;
-      dynamicList += "\n";
+      dynamicList += '\n';
     }
 
     return dynamicList;
   }
 
   returnWorkList() {
-    let dynamicList = "";
+    let dynamicList = '';
     for (let i = 0; i < this.projectDetails.technologies.length; i += 1) {
       dynamicList += `<li class="tag">${this.projectDetails.technologies[i]}</li>`;
-      dynamicList += "\n";
+      dynamicList += '\n';
     }
 
     return dynamicList;
@@ -87,7 +87,7 @@ class Object {
 }
 
 const project1 = new Object(
-  "Online AI Courses Website",
+  'Online AI Courses Website',
   `In this project I have created an educational website which offers free
   Artifical Intelligence courses. Although the site is currently in a wireframe phase,
   its purpose is clear—to ignite curiosity and encourage discovery.
@@ -97,86 +97,86 @@ const project1 = new Object(
   team behind this initiative, all working towards democratizing AI education.
   While the website doesn't currently provide courses,
   it sets the stage for future learning experiences.`,
-  "assests/project1.png",
-  ["JavaScript", "HTML", "CSS"],
-  ["Github", "Javascript", "Bootstrap", "HTML", "CSS"],
-  "https://muhammaduzairrazaq.github.io/capstoneProject/",
-  "https://github.com/muhammaduzairrazaq/capstoneProject"
+  'assests/project1.png',
+  ['JavaScript', 'HTML', 'CSS'],
+  ['Github', 'Javascript', 'Bootstrap', 'HTML', 'CSS'],
+  'https://muhammaduzairrazaq.github.io/capstoneProject/',
+  'https://github.com/muhammaduzairrazaq/capstoneProject',
 );
 
 const project2 = new Object(
-  "Keeping track of hundreds of components",
+  'Keeping track of hundreds of components',
   `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.`,
-  "",
-  ["JavaScript", "Rubby on Rails", "CSS"],
-  ["Codekit", "Github", "Javascript", "Bootstrap", "Terminal", "Codepen"],
-  "https://example.com/live",
-  "https://github.com/example/project_x"
+  'assests/noproject.png',
+  ['JavaScript', 'Rubby on Rails', 'CSS'],
+  ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+  'https://example.com/live',
+  'https://github.com/example/project_x',
 );
 
 const project3 = new Object(
-  "Keeping track of hundreds of components",
+  'Keeping track of hundreds of components',
   `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.`,
-  "",
-  ["JavaScript", "Rubby on Rails", "CSS"],
-  ["Codekit", "Github", "Javascript", "Bootstrap", "Terminal", "Codepen"],
-  "https://example.com/live",
-  "https://github.com/example/project_x"
+  'assests/noproject.png',
+  ['JavaScript', 'Rubby on Rails', 'CSS'],
+  ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+  'https://example.com/live',
+  'https://github.com/example/project_x',
 );
 
 const project4 = new Object(
-  "Keeping track of hundreds of components",
+  'Keeping track of hundreds of components',
   `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.`,
-  "",
-  ["JavaScript", "Rubby on Rails", "CSS"],
-  ["Codekit", "Github", "Javascript", "Bootstrap", "Terminal", "Codepen"],
-  "https://example.com/live",
-  "https://github.com/example/project_x"
+  'assests/noproject.png',
+  ['JavaScript', 'Rubby on Rails', 'CSS'],
+  ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+  'https://example.com/live',
+  'https://github.com/example/project_x',
 );
 
 const project5 = new Object(
-  "Keeping track of hundreds of components",
+  'Keeping track of hundreds of components',
   `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.`,
-  "",
-  ["JavaScript", "Rubby on Rails", "CSS"],
-  ["Codekit", "Github", "Javascript", "Bootstrap", "Terminal", "Codepen"],
-  "https://example.com/live",
-  "https://github.com/example/project_x"
+  'assests/noproject.png',
+  ['JavaScript', 'Rubby on Rails', 'CSS'],
+  ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+  'https://example.com/live',
+  'https://github.com/example/project_x',
 );
 
 const project6 = new Object(
-  "Keeping track of hundreds of components",
+  'Keeping track of hundreds of components',
   `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
   when an unknown printer took a galley of type and scrambled it 1960s.`,
-  "",
-  ["JavaScript", "Rubby on Rails", "CSS"],
-  ["Codekit", "Github", "Javascript", "Bootstrap", "Terminal", "Codepen"],
-  "https://example.com/live",
-  "https://github.com/example/project_x"
+  'assests/noproject.png',
+  ['JavaScript', 'Rubby on Rails', 'CSS'],
+  ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+  'https://example.com/live',
+  'https://github.com/example/project_x',
 );
 
 const objectsArray = [
@@ -189,7 +189,7 @@ const objectsArray = [
 ];
 
 function displayWorksection() {
-  let dynamicWorksection = "";
+  let dynamicWorksection = '';
   for (let i = 0; i < objectsArray.length; i += 1) {
     dynamicWorksection += `
     <div class="work" style="background-image: url('${objectsArray[i].returnImage()}');">
@@ -207,31 +207,30 @@ function displayWorksection() {
     \n
     `;
   }
-  document.querySelector(".recent-works-container").innerHTML =
-    dynamicWorksection;
+  document.querySelector('.recent-works-container').innerHTML = dynamicWorksection;
 }
 
 displayWorksection();
 
 function removeHighlight() {
   const list = document.querySelectorAll('[class^="high"]');
-  list[0].classList.remove("underline");
-  list[1].classList.remove("underline");
-  list[2].classList.remove("underline");
+  list[0].classList.remove('underline');
+  list[1].classList.remove('underline');
+  list[2].classList.remove('underline');
 }
 
 // eslint-disable-next-line no-unused-vars
 function showMenu() {
   removeHighlight();
-  document.querySelector(".nav-bar").classList.add("open");
-  document.querySelector(".menu-btn").classList.add("hide");
-  document.querySelector(".menu-btnn").classList.add("show");
+  document.querySelector('.nav-bar').classList.add('open');
+  document.querySelector('.menu-btn').classList.add('hide');
+  document.querySelector('.menu-btnn').classList.add('show');
 }
 
 function closeMenu() {
-  document.querySelector(".nav-bar").classList.remove("open");
-  document.querySelector(".menu-btn").classList.remove("hide");
-  document.querySelector(".menu-btnn").classList.remove("show");
+  document.querySelector('.nav-bar').classList.remove('open');
+  document.querySelector('.menu-btn').classList.remove('hide');
+  document.querySelector('.menu-btnn').classList.remove('show');
 }
 
 // eslint-disable-next-line no-unused-vars
@@ -240,51 +239,47 @@ function highLight(name) {
   const width = window.innerWidth;
   if (width >= 768) {
     removeHighlight();
-    document.querySelector(name).classList.add("underline");
+    document.querySelector(name).classList.add('underline');
   }
 }
 
 // eslint-disable-next-line no-unused-vars
 function projectDetailWindow(projectName) {
   document.getElementById(
-    "projbk"
+    'projbk',
   ).style.backgroundImage = `url("${objectsArray[projectName].returnImage()}")`;
-  document.querySelector("#name").innerHTML =
-    objectsArray[projectName].returnName();
-  document.querySelector(".project-detail-tags").innerHTML =
-    objectsArray[projectName].returnList();
-  document.querySelector("#description").innerHTML =
-    objectsArray[projectName].returnDescription();
-  document.querySelector(".pro-detail-button").innerHTML =
-    objectsArray[projectName].returnLinks();
+  document.querySelector('#name').innerHTML = objectsArray[projectName].returnName();
+  document.querySelector('.project-detail-tags').innerHTML = objectsArray[projectName].returnList();
+  document.querySelector('#description').innerHTML = objectsArray[projectName].returnDescription();
+  document.querySelector('.pro-detail-button').innerHTML = objectsArray[projectName].returnLinks();
 }
 
 // eslint-disable-next-line no-unused-vars
 function projectDetailWindowOpenClose(status) {
-  if (status === "close") {
-    document.querySelector(".project-details-bkg").classList.remove("top-open");
+  if (status === 'close') {
+    document.querySelector('.project-details-bkg').classList.remove('top-open');
   } else {
-    document.querySelector(".project-details-bkg").classList.add("top-open");
+    document.querySelector('.project-details-bkg').classList.add('top-open');
   }
   projectDetailWindow(status);
 }
 
-const button = document.querySelector(".form-button");
-button.addEventListener("click", (event) => {
-  const email = document.getElementById("email-address");
+const button = document.querySelector('.form-button');
+button.addEventListener('click', (event) => {
+  const email = document.getElementById('email-address');
   const emailAddress = email.value;
   const lowerCase = emailAddress.toLowerCase();
   if (emailAddress !== lowerCase) {
-    document.querySelector(".error").classList.add("display-flex");
+    document.querySelector('.error').classList.add('display-flex');
     event.preventDefault();
   } else {
-    document.querySelector(".error").classList.remove("display-flex");
+    document.querySelector('.error').classList.remove('display-flex');
   }
 });
 
-const userName = document.querySelector("#user-name");
-const emailAddress = document.querySelector("#email-address");
-const message = document.querySelector("#text-area");
+const userName = document.querySelector('#user-name');
+const emailAddress = document.querySelector('#email-address');
+const message = document.querySelector('#text-area');
 
 function dataStorage() {
   const formData = {
@@ -292,14 +287,14 @@ function dataStorage() {
     email: emailAddress.value,
     message: message.value,
   };
-  localStorage.setItem("data", JSON.stringify(formData));
+  localStorage.setItem('data', JSON.stringify(formData));
 }
 
 const elements = [userName, emailAddress, message];
 for (let i = 0; i < elements.length; i += 1) {
-  elements[i].addEventListener("focusout", dataStorage);
+  elements[i].addEventListener('focusout', dataStorage);
 }
-const userData = JSON.parse(localStorage.getItem("data"));
+const userData = JSON.parse(localStorage.getItem('data'));
 if (userData) {
   userName.value = userData.name;
   emailAddress.value = userData.email;
