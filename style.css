@@ -269,6 +269,11 @@ aside ul {
   justify-content: center;
 }
 
+.work {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .work-inside p {
   margin-top: 3%;
   font-size: 1.3rem;
